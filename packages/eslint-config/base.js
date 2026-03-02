@@ -1,8 +1,10 @@
 import js from "@eslint/js";
+import stylistic from "@stylistic/eslint-plugin";
 import eslintConfigPrettier from "eslint-config-prettier";
-import turboPlugin from "eslint-plugin-turbo";
+import perfectionist from "eslint-plugin-perfectionist";
+import turbo from "eslint-plugin-turbo";
+import unicorn from "eslint-plugin-unicorn";
 import tseslint from "typescript-eslint";
-import onlyWarn from "eslint-plugin-only-warn";
 
 /**
  * A shared ESLint configuration for the repository.
@@ -13,17 +15,14 @@ export const config = [
   js.configs.recommended,
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
+  stylistic.configs["recommended"],
+  perfectionist.configs["recommended-natural"],
+  turbo.configs["flat/recommended"],
   {
-    plugins: {
-      turbo: turboPlugin,
-    },
+    plugins: { unicorn },
     rules: {
-      "turbo/no-undeclared-env-vars": "warn",
-    },
-  },
-  {
-    plugins: {
-      onlyWarn,
+      "@stylistic/semi": ["warn", "always"],
+      "unicorn/prefer-node-protocol": "warn",
     },
   },
   {

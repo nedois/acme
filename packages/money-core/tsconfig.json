@@ -1,0 +1,10 @@
+{
+  "extends": "@nedois/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "strictNullChecks": true
+  },
+  "include": ["src", "tests/money.test.ts", "tests/exchange.test.ts", "tests/currencies.test.ts", "tests/calculator.test.ts", "tests/exceptions/different-currency-exception.test.ts", "tests/exceptions/invalid-argument-exception.test.ts", "tests/exceptions/unknown-currency-exception.test.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
