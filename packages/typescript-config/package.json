@@ -1,7 +1,7 @@
 {
   "name": "@nedois/typescript-config",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
