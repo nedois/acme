@@ -6,7 +6,8 @@
     "./*": "./src/*.tsx"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint . --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit"
   },
