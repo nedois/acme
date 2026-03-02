@@ -10,7 +10,13 @@
     "./base": "./dist/configs/base-config.js"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nedois/acme.git",
+    "directory": "packages/vitest-config"
   },
   "scripts": {
     "build": "tsc",

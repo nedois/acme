@@ -7,7 +7,13 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nedois/acme.git",
+    "directory": "packages/money-core"
   },
   "exports": {
     ".": {

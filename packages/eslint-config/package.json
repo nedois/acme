@@ -4,7 +4,13 @@
   "type": "module",
   "private": true,
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nedois/acme.git",
+    "directory": "packages/eslint-config"
   },
   "scripts": {
     "lint": "eslint . --fix",
