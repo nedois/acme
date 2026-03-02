@@ -26,3 +26,6 @@ catalog:
   "nyc": 17.1.0
   "big.js": 7.0.1
   "@types/big.js": 6.2.2
+  "husky": 9.1.7
+  "lint-staged": 16.3.1
+  "@changesets/cli": 2.29.8

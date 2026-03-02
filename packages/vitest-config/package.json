@@ -8,6 +8,9 @@
     "./ui": "./dist/configs/ui-config.js",
     "./base": "./dist/configs/base-config.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",

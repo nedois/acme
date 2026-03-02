@@ -1,5 +1,5 @@
 {
-  "extends": "@nedois/typescript-config/react-library.json",
+  "extends": "@nedois/typescript-config/react-library",
   "compilerOptions": {
     "outDir": "dist",
     "strictNullChecks": true
