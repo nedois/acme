@@ -270,9 +270,6 @@ importers:
       '@nedois/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@nedois/vitest-config':
-        specifier: workspace:*
-        version: 'link:'
       '@vitest/coverage-istanbul':
         specifier: 'catalog:'
         version: 4.0.18(vitest@4.0.18)
