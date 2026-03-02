@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@nedois/ui"]
+  "ignore": ["@nedois/ui", "@apps/*"]
 }
